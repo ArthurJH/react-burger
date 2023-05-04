@@ -4,7 +4,7 @@ import styles from './AppHeader.module.css'
 
 function AppHeader() {
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} mb-10`}>
             <div className={`${styles.header__wrapper} container`} >
                 <div className={styles.header__left}>
                     <div className={styles.header__logo}>
@@ -17,10 +17,10 @@ function AppHeader() {
                     </div>
                 </div>
                 <Logo />
-                <a className={styles.header__auth}>
+                <div className={styles.header__auth}>
                     <ProfileIcon type="secondary" />
                     <p className="text text_type_main-default">Личный кабинет</p>
-                </a>
+                </div>
             </div>
         </header>
     )
