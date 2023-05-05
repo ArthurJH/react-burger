@@ -10,23 +10,29 @@ function BurgerIngredients({data}) {
         <div className={styles.leftSide}>
             <div className={`${styles.menu} mb-10`}>
                 <Tab value="one" active={current === 'one'} onClick={setCurrent}>
-                    <p className="text text_type_main-default">
-                        Булки
-                    </p>
+                    <a className={styles.tabLink} href="#section1">
+                        <p className="text text_type_main-default">
+                            Булки
+                        </p>
+                    </a>
                 </Tab>
                 <Tab value="two" active={current === 'two'} onClick={setCurrent}>
-                    <p className="text text_type_main-default">
-                        Соусы
-                    </p>
+                    <a className={styles.tabLink} href="#section2">
+                        <p className="text text_type_main-default">
+                            Соусы
+                        </p>
+                    </a>
                 </Tab>
                 <Tab value="three" active={current === 'three'} onClick={setCurrent}>
-                    <p className="text text_type_main-default">
-                        Начинки
-                    </p>
+                    <a className={styles.tabLink} href="#section3">
+                        <p className="text text_type_main-default">
+                            Начинки
+                        </p>
+                    </a>
                 </Tab>
             </div>
-            <div className={styles.list}>
-                <div className={styles.section}>
+            <div className={`${styles.list} custom-scroll`}>
+                <section id="section1" className={styles.section}>
                     <p className="text text_type_main-medium mb-6">
                         Булки
                     </p>
@@ -35,8 +41,8 @@ function BurgerIngredients({data}) {
                             return <Ingredient {...newEl} key={newEl.id}/>
                         })}
                     </div>
-                </div>
-                <div className={styles.section}>
+                </section>
+                <section id="section2" className={styles.section}>
                     <p className="text text_type_main-medium mb-6">
                         Соусы
                     </p>
@@ -45,8 +51,8 @@ function BurgerIngredients({data}) {
                             return <Ingredient {...newEl} key={newEl.id}/>
                         })}
                     </div>
-                </div>
-                <div className={styles.section}>
+                </section>
+                <section id="section3" className={styles.section}>
                     <p className="text text_type_main-medium mb-6">
                         Начинки
                     </p>
@@ -55,7 +61,7 @@ function BurgerIngredients({data}) {
                             return <Ingredient {...newEl} key={newEl.id}/>
                         })}
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     );
