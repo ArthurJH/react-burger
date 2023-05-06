@@ -2,8 +2,12 @@ import styles from "./BurgerConstructor.module.css";
 import {Button, ConstructorElement, CurrencyIcon, DragIcon} from "@ya.praktikum/react-developer-burger-ui-components";
 import React from "react";
 
-function BurgerConstructor() {
+function BurgerConstructor({openModal}) {
     const imgBun = 'https://code.s3.yandex.net/react/code/bun-02.png';
+
+    function openCheck() {
+        openModal(null, 'check')
+    }
 
     return (
         <div className={`${styles.rightSide} ml-10`}>
@@ -112,7 +116,7 @@ function BurgerConstructor() {
             <div className={`${styles.check} mt-10`}>
                 <p className="text text_type_digits-medium mr-2">610</p>
                 <CurrencyIcon type="primary"/>
-                <Button htmlType="button" type="primary" size="medium">
+                <Button htmlType="button" type="primary" size="medium" onClick={openCheck}>
                     Оформить заказ
                 </Button>
             </div>

@@ -3,9 +3,22 @@ import PropTypes from "prop-types";
 import {CurrencyIcon, Counter} from '@ya.praktikum/react-developer-burger-ui-components'
 import styles from './Ingredient.module.css'
 
-function Ingredient({name, price, image}) {
+function Ingredient({name, price, image, openModal, proteins, fat, carbohydrates, calories, image_large}) {
+    function openIngredient() {
+        const ingredient = {
+            name,
+            proteins,
+            fat,
+            carbohydrates,
+            calories,
+            image_large
+        }
+
+        openModal(ingredient)
+    }
+
     return (
-        <div className={styles.ingredient}>
+        <div className={styles.ingredient} onClick={openIngredient}>
             <Counter count={1} size="default" extraClass="m-1" />
             <img src={image} alt="" className="mb-2"/>
             <div className={`${styles.price} mb-2`}>

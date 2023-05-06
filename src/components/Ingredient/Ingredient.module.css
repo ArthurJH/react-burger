@@ -6,6 +6,11 @@
     width: 272px;
     margin: 16px 10px;
     text-align: center;
+    cursor: pointer;
+}
+
+.ingredient:hover .desc{
+    color: #4C4CFF;
 }
 
 .price {
@@ -15,4 +20,5 @@
 
 .desc {
     min-height: 48px;
+    transition: color 0.3s ease-out;
 }

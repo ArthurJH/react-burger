@@ -7,20 +7,20 @@ function AppHeader() {
         <header className={`${styles.header} mb-10`}>
             <div className={`${styles.header__wrapper} container`} >
                 <div className={styles.header__left}>
-                    <div className={styles.header__logo}>
+                    <a href="#" className={styles.header__logo}>
                         <BurgerIcon type="primary" />
                         <p className="text text_type_main-default">Конструктор</p>
-                    </div>
-                    <div className={styles.header__orders}>
+                    </a>
+                    <a href="#" className={styles.header__orders}>
                         <ListIcon type="secondary" />
                         <p className="text text_type_main-default">Лента заказов</p>
-                    </div>
+                    </a>
                 </div>
                 <Logo />
-                <div className={styles.header__auth}>
+                <a href="#" className={styles.header__auth}>
                     <ProfileIcon type="secondary" />
                     <p className="text text_type_main-default">Личный кабинет</p>
-                </div>
+                </a>
             </div>
         </header>
     )
