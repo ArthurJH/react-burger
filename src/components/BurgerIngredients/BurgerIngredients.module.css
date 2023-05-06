@@ -2,55 +2,6 @@
 
 }
 
-.rightSide {
-    margin-left: 60px;
-}
-
-.composition {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.composition__border {
-    margin-right: 16px;
-}
-
-.composition__list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 16px 0;
-    max-height: 464px;
-    overflow-y: auto;
-    padding-right: 8px;
-}
-
-.composition__row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.composition__row > svg{
-    margin-right: 5px;
-}
-
-.composition__row:last-child {
-    margin-bottom: 0;
-}
-
-.check {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 16px;
-}
-
-.check button {
-    margin-left: 40px;
-}
-
 .menu {
     display: flex;
 }
