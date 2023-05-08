@@ -2,6 +2,7 @@ import React from "react";
 import Modal from "../Modal/Modal";
 import style from "./IngredientDetails.module.css"
 import PropTypes from "prop-types";
+import {ingredientTypes} from '../../utils/prop-types'
 
 function IngredientDetails({onClose, ingredient}) {
     return (
@@ -51,15 +52,8 @@ function IngredientDetails({onClose, ingredient}) {
 }
 
 IngredientDetails.propTypes = {
-    onClose: PropTypes.func,
-    ingredient: PropTypes.shape({
-        image_large: PropTypes.string,
-        name: PropTypes.string,
-        calories: PropTypes.number,
-        carbohydrates: PropTypes.number,
-        fat: PropTypes.number,
-        proteins: PropTypes.number
-    })
+    onClose: PropTypes.func.isRequired,
+    ingredient: ingredientTypes
 };
 
 export default IngredientDetails;

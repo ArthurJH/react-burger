@@ -1,4 +1,6 @@
 .modal {
+    position: relative;
+    z-index: 20;
     width: 720px;
     min-height: 300px;
     background: #1C1C21;
@@ -7,6 +9,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.modal__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal__header {

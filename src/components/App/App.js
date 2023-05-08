@@ -5,10 +5,10 @@ import style from './App.module.css'
 import BurgerConstructor from "../BurgerConstructor/BurgerConstructor";
 import OrderDetails from "../OrderDetails/OrderDetails";
 import IngredientDetails from "../IngredientDetails/IngredientDetails";
+import {getIngredients} from '../../utils/burger-api'
+
 
 function App() {
-    const urlAPI = 'https://norma.nomoreparties.space/api/ingredients';
-
     const [state, setState] = useState({
         isLoading: false,
         hasError: false,
@@ -44,22 +44,11 @@ function App() {
     }
 
     const getProducts = () => {
-        fetch(urlAPI)
-            .then(res => res.json())
-            .then(data => setState({...state, ingredients: data.data, isLoading: false}))
-            .catch(e => {
-                setState({...state, hasError: true, isLoading: false});
-            });
+        getIngredients().then(data => setState({...state, ingredients: data.data, isLoading: false}))
     };
 
     useEffect(() => {
         getProducts();
-
-        document.addEventListener('keydown', function(e) {
-            if (e.keyCode === 27) {
-                handleCloseModal();
-            }
-        }, false)
     }, [])
 
     return (

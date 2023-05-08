@@ -5,17 +5,12 @@ import PropTypes from "prop-types";
 function ModalOverlay({onClose, children}) {
     return (
         <div className={style.modalOverlay} onClick={onClose}>
-            {children}
         </div>
     )
 }
 
 ModalOverlay.propTypes = {
-    onClose: PropTypes.func,
-    children: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.node),
-        PropTypes.node
-    ]).isRequired
+    onClose: PropTypes.func.isRequired
 };
 
 export default ModalOverlay;

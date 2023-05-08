@@ -25,7 +25,7 @@ function OrderDetails({onClose}) {
 }
 
 OrderDetails.propTypes = {
-    onClose: PropTypes.func
+    onClose: PropTypes.func.isRequired
 };
 
 export default OrderDetails;
