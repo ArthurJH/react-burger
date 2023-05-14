@@ -1,0 +1,9 @@
+.orderDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orderDetail img {
+    width: 120px;
+}
