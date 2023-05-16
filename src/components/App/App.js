@@ -25,7 +25,7 @@ function App() {
         }
     )
 
-    const [checkID, setCheckID] = useState('0000')
+    const [checkID, setCheckID] = useState(0)
 
     const [totalPrice, setTotalPrice] = useState(0)
 
@@ -33,7 +33,8 @@ function App() {
 
     function handleOpenModal(ingredient = null, type = 'ingredient') {
         if (type === 'check') {
-            sendOrder().then(data => setCheckID(data.order.number))
+            const ingredientID = order.map(el => el._id);
+            sendOrder(ingredientID).then(data => setCheckID(data.order.number))
         }
 
         if(type === 'ingredient') {

@@ -25,6 +25,7 @@ function OrderDetails({onClose, checkID}) {
 }
 
 OrderDetails.propTypes = {
+    checkID: PropTypes.number,
     onClose: PropTypes.func.isRequired
 };
 

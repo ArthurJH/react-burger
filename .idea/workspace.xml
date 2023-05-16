@@ -13,9 +13,7 @@
     <list default="true" id="e8e4d28d-ff5c-47ae-b5ed-18db6d0e3cc6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BurgerConstructor/BurgerConstructor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BurgerConstructor/BurgerConstructor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/OrderDetails/OrderDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderDetails/OrderDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/burger-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/burger-api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +88,7 @@
       <workItem from="1684060793813" duration="28000" />
       <workItem from="1684060822513" duration="12261000" />
       <workItem from="1684131778603" duration="15000" />
-      <workItem from="1684178812906" duration="9841000" />
+      <workItem from="1684178812906" duration="10497000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;first commit&quot;">
       <created>1683092778718</created>
@@ -190,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684060892342</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Submit for review: sprint-2/step-1">
+      <created>1684238843772</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684238843772</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +227,8 @@
     <MESSAGE value="Fix 1" />
     <MESSAGE value="Finish" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Submit for review: sprint-2/step-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Submit for review: sprint-2/step-1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="388" key="#Notifications" timestamp="1683550979847">
@@ -243,22 +249,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1683363529728" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1683550976067">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1684238850960">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1683363535710" />
     <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1683406744682" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1683550976067" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1684238850960" />
     <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1684060894036">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1684060894036" />
-    <state x="1151" y="161" width="585" height="534" key="find.popup" timestamp="1684182627259">
+    <state x="1151" y="161" width="585" height="534" key="find.popup" timestamp="1684238793580">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="564" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1683378481770" />
     <state x="2587" y="258" width="585" height="534" key="find.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1683406352041" />
-    <state x="1151" y="161" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1684182627259" />
+    <state x="1151" y="161" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1684238793580" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1683298694808">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
